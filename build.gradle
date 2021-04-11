@@ -27,10 +27,8 @@ micronaut {
     }
 }
 
-configurations {
-    all {
-        exclude group: "javax.inject", module: "javax.inject"
-    }
+configurations.all {
+    exclude group: "javax.inject", module: "javax.inject"
 }
 
 dependencies {
