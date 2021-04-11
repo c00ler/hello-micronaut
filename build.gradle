@@ -27,6 +27,12 @@ micronaut {
     }
 }
 
+configurations {
+    all {
+        exclude group: "javax.inject", module: "javax.inject"
+    }
+}
+
 dependencies {
     implementation("io.micronaut:micronaut-validation")
     implementation("io.micronaut:micronaut-runtime")
